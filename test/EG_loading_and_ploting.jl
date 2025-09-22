@@ -6,7 +6,7 @@ n = size(A)[1]
 G = SimpleGraph{Int64}(A)
 
 AEIG = eigen(A)
-display(AEIG)
+#display(AEIG)
 
 X = AEIG.vectors[:,3:4]
 GraphVectsPlot(G, X)
