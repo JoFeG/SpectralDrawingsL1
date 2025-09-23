@@ -1,4 +1,4 @@
-using Graphs, Plots
+using LinearAlgebra, Graphs, Plots, DelimitedFiles
 
 function GraphVectsPlot(G,X)
     n, d = size(X)
