@@ -15,4 +15,4 @@ anim = @animate for i=1:36
     plot(camera = (10i,30))
     GraphVectsPlot(G, X)
 end
-gif(anim, "./out/graph_442.gif", fps = 8)
+gif(anim, "../out/graph_442.gif", fps = 8)
