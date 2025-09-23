@@ -2,6 +2,8 @@
 
 The adjacency matrix files (like `graph_442.mat`) can be downloaded from [The House of Graphs](https://houseofgraphs.org/).
 
+**Be aware that the brute force algorithms are exponential, up to n ≈ 16 is reasonable.**
+
 ```
 julia> include("./src/spectral_drawing_utils.jl");
 
