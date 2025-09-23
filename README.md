@@ -1,5 +1,7 @@
 ## Usage example:
 
+The adjacency matrix files (like `graph_442.mat`) can be downloaded from [The House of Graphs](https://houseofgraphs.org/).
+
 ```
 julia> include("./src/spectral_drawing_utils.jl");
 
