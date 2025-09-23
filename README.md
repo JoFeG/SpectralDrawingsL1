@@ -21,7 +21,9 @@ julia> X
 julia> rank(X)
 3
 
-julia> GraphVectsPlot(G,X[:,1:3])
+julia> fig = plot(); GraphVectsPlot(G,X[:,1:3]);
+
+julia> savefig(fig,"./out/L1SD_graph_442.png")
 ```
 
 ![L1SD_graph_442](./out/L1SD_graph_442.png)
