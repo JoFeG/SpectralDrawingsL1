@@ -21,7 +21,7 @@ function GraphVectsPlot(G,X)
 end
 
 
-function b_BruteForce1(G)
+function b_BruteForce(G)
     n = nv(G)
     M = Inf
     for k = 1:3^n
@@ -36,7 +36,7 @@ function b_BruteForce1(G)
 end
 
 function b_VectorsBruteForce(G)
-    bG = bBruteForce1(G)
+    bG = b_BruteForce(G)
     n = nv(G)
     X = Array{Float64}(undef, n, 0)
     for k = 1:3^n
@@ -53,7 +53,7 @@ function b_VectorsBruteForce(G)
     return bG, X
 end
 
-function B_BruteForce1(G)
+function B_BruteForce(G)
     n = nv(G)
     M = -Inf
     for k = 1:3^n
@@ -68,7 +68,7 @@ function B_BruteForce1(G)
 end
 
 function B_VectorsBruteForce(G)
-    BG = B_BruteForce1(G)
+    BG = B_BruteForce(G)
     n = nv(G)
     X = Array{Float64}(undef, n, 0)
     for k = 1:3^n
