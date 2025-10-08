@@ -13,7 +13,7 @@ fig = plot()
 GraphVectsPlot(G, X)
 savefig(fig, "./out/L2SD_graph_442.png")
 
-bG, X = L1VectorsBruteForce(G)
+bG, X = b_VectorsBruteForce(G)
 
 anim = @animate for i=1:36
     plot(camera = (10i,30))
